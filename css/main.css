@@ -1,0 +1,225 @@
+body{
+    margin: 0;
+    color: yellow;
+    font-size: 50px;
+    font-weight: bold;
+    background-color: #6e6c69;
+}
+
+.game{
+    background-image: url(../img/poker-desk.jpg);
+    position: relative;
+    background-repeat: no-repeat;
+    width: 1440px;
+    height: 700px;
+    margin: 25px auto;
+}
+
+.deck-of-cards{
+    position: absolute;
+    left: 82%;
+    top: 10%;
+    width: 160px;
+    height: 250px;
+}
+
+.card{
+    background-image: url(../img/back-size-of-card.jpg);
+    width: 160px;
+    height: 250px;
+    background-size: contain;
+    position: absolute;
+}
+
+.pass{
+    width: 8%;
+    height: 5%;
+    position: absolute;
+    top: 50%;
+    left: 86.5%;
+    border:1px solid blue;
+    background-color: aquamarine;
+    transition: 0.3s ease-in-out;
+}
+
+.pass:hover{
+    width: 10%;
+    height: 6%;
+    position: absolute;
+    top: 49%;
+    left: 85.5%;
+    border:2px solid lightsalmon;
+    background-color: blanchedalmond;
+    transition: 0.3s ease-in-out;
+}
+.computer-cards{
+    width: 75%;
+    height: 45%;
+    position: relative;
+    left:8%;
+}
+
+.player-cards{
+    width: 75%;
+    height: 45%;
+    position: relative;
+    left: 8%;
+}
+
+.player-card{
+    display: inline-block;
+    width: 165px;
+    height: 250px;
+    margin-top: 5%;
+    margin-left: 2%;
+    background-size: cover;
+}
+
+.player-score{
+    width: 7%;
+    height: 5%;
+    position: relative;
+    top: 50%;
+    left: 13%;
+}
+
+.computer-card{
+    display: inline-block;
+    width: 165px;
+    height: 250px;
+    margin-top: 2%;
+    margin-left: 2%;
+    background-size: cover;
+}
+
+.computer-score{
+    width: 7%;
+    height: 5%;
+    position: relative;
+    top: 2%;
+    left: 13%;
+}
+
+.computer-wings{
+    position: absolute;
+    font-size: 65px;
+    font-weight: bold;
+    top: 5%;
+    left: 3%;
+}
+
+.player-wings{
+    position: absolute;
+    font-size: 65px;
+    font-weight: bold;
+    top: 80%;
+    left: 3%;
+}
+
+.game-coins{
+    position: absolute;
+    height: 10%;
+    width: 50px;
+    left: -5%;
+    top: 35%;
+}
+
+.game-coin{
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.player-coin{
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.computer-coin{
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.player-wings-coin{
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    border-radius: 50%;
+    position: absolute;
+    margin-top: 100px;
+}
+
+.computer-wings-coin{
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    border-radius: 50%;
+    position: absolute;
+    margin-top: -100px;
+}
+
+.score-table{
+    display: none;
+    position: absolute;
+    width: 1440px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+    top: 0%;
+}
+
+.start-game{
+    display: none;
+    position: absolute;
+    width: 1440px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+    top: 0%;
+}
+
+.start-game-button{
+    display: none;
+    width: 150px;
+    height: 50px;
+    background-color: burlywood;
+    position: absolute;
+    top: 65%;
+    left: 45%;
+}
+
+.button-container{
+    position: absolute;
+    top: 60%;
+    left: 35%;
+    display: inline-block;
+}
+
+.continue-play-button{
+    display: none;
+    width: 150px;
+    height: 50px;
+    background-color: burlywood;
+}
+
+.restart-game-button{
+    display: none;
+    width: 150px;
+    height: 50px;
+    background-color: burlywood;
+    margin: 0 115px;
+}
+
+.blur>*:not(.score-table,.button-container, .start-game-button, .start-game){
+    filter: blur(5px);
+}
